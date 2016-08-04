@@ -12,14 +12,7 @@ namespace WelpApp.Models
     public class ApplicationUser : IdentityUser
     {
 
-        public string ApplicationUserID { get; set; }
-        [MaxLength(50)]
-        public string ApplicationUsername { get; set; }
-        [MaxLength(50)]
-        public string Password { get; set; }
-        [MaxLength(100)]
-        public string Email { get; set; }
-        [MaxLength(100)]
+        
         public string Location { get; set; }
 
         // navigation properties
@@ -47,12 +40,6 @@ namespace WelpApp.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<WelpApp.Models.Rating> Ratings { get; set; }
-
-        public System.Data.Entity.DbSet<WelpApp.Models.Business> Businesses { get; set; }
-
-        public System.Data.Entity.DbSet<WelpApp.Models.ApplicationUser> ApplicationUsers { get; set; }
-
-        public System.Data.Entity.DbSet<WelpApp.Models.BusinessType> BusinessTypes { get; set; }
+     
     }
 }
