@@ -40,6 +40,12 @@ namespace WelpApp.Models
             return new ApplicationDbContext();
         }
 
-     
+        public System.Data.Entity.DbSet<WelpApp.Models.Business> Businesses { get; set; }
+
+        public System.Data.Entity.DbSet<WelpApp.Models.BusinessType> BusinessTypes { get; set; }
+
+        public System.Data.Entity.DbSet<WelpApp.Models.Rating> Ratings { get; set; }
+
+        public System.Data.Entity.DbSet<WelpApp.Models.ApplicationUser> ApplicationUsers { get; set; }
     }
 }
