@@ -40,7 +40,7 @@ namespace WelpApp.Controllers
         public ActionResult Create()
         {
             ViewBag.BusinessID = new SelectList(db.Businesses, "BusinessID", "BusinessName");
-            ViewBag.ApplicationUserID = new SelectList(db.ApplicationUsers, "Id", "Location");
+            ViewBag.ApplicationUserID = new SelectList(db.Users, "Id", "Location");
             return View();
         }
 
@@ -59,7 +59,7 @@ namespace WelpApp.Controllers
             }
 
             ViewBag.BusinessID = new SelectList(db.Businesses, "BusinessID", "BusinessName", rating.BusinessID);
-            ViewBag.ApplicationUserID = new SelectList(db.ApplicationUsers, "Id", "Location", rating.ApplicationUserID);
+            ViewBag.ApplicationUserID = new SelectList(db.Users, "Id", "Location", rating.ApplicationUserID);
             return View(rating);
         }
 
@@ -76,7 +76,7 @@ namespace WelpApp.Controllers
                 return HttpNotFound();
             }
             ViewBag.BusinessID = new SelectList(db.Businesses, "BusinessID", "BusinessName", rating.BusinessID);
-            ViewBag.ApplicationUserID = new SelectList(db.ApplicationUsers, "Id", "Location", rating.ApplicationUserID);
+            ViewBag.ApplicationUserID = new SelectList(db.Users, "Id", "Location", rating.ApplicationUserID);
             return View(rating);
         }
 
@@ -94,7 +94,7 @@ namespace WelpApp.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.BusinessID = new SelectList(db.Businesses, "BusinessID", "BusinessName", rating.BusinessID);
-            ViewBag.ApplicationUserID = new SelectList(db.ApplicationUsers, "Id", "Location", rating.ApplicationUserID);
+            ViewBag.ApplicationUserID = new SelectList(db.Users, "Id", "Location", rating.ApplicationUserID);
             return View(rating);
         }
 

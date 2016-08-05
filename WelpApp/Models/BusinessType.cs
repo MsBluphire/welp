@@ -16,5 +16,6 @@ namespace WelpApp.Models
 
         // navigation properties
         public virtual ICollection<Business> Businesses { get; set; }
+      
     }
 }

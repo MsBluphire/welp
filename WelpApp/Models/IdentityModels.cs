@@ -46,6 +46,5 @@ namespace WelpApp.Models
 
         public System.Data.Entity.DbSet<WelpApp.Models.Rating> Ratings { get; set; }
 
-        public System.Data.Entity.DbSet<WelpApp.Models.ApplicationUser> ApplicationUsers { get; set; }
     }
 }
