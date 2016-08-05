@@ -37,6 +37,7 @@ namespace WelpApp.Controllers
         }
 
         // GET: Ratings/Create
+        [Authorize(Roles ="canEdit")]
         public ActionResult Create()
         {
             ViewBag.BusinessID = new SelectList(db.Businesses, "BusinessID", "BusinessName");
@@ -49,6 +50,7 @@ namespace WelpApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles ="canEdit")]
         public ActionResult Create([Bind(Include = "RatingID,ApplicationUserID,BusinessID,StarReview,TextReview")] Rating rating)
         {
             if (ModelState.IsValid)
@@ -64,6 +66,7 @@ namespace WelpApp.Controllers
         }
 
         // GET: Ratings/Edit/5
+        [Authorize(Roles ="canEdit")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -85,6 +88,7 @@ namespace WelpApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles ="canEdit")]
         public ActionResult Edit([Bind(Include = "RatingID,ApplicationUserID,BusinessID,StarReview,TextReview")] Rating rating)
         {
             if (ModelState.IsValid)
