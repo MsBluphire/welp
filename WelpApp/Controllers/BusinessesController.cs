@@ -85,7 +85,7 @@ namespace WelpApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles ="canEdit")]
+        
         public ActionResult Edit([Bind(Include = "BusinessID,BusinessName,BusinessTypeID,Address,Hours,Phone,Menu,UserID")] Business business)
         {
             if (ModelState.IsValid)
