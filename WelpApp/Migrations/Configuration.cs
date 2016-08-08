@@ -129,10 +129,46 @@ namespace WelpApp.Migrations
 
                 );
 
-                
-    
+            context.Ratings.AddOrUpdate(p => p.RatingID,
 
-                
+                new Rating
+                {
+                    RatingID = 1,
+                    StarReview = 1,
+                    TextReview = "",
+                },
+                 new Rating
+                 {
+                     RatingID = 2,
+                     StarReview = 2, 
+                     TextReview = "",
+
+                 },
+                 new Rating
+                 {
+                     RatingID = 3, 
+                     StarReview = 3,
+                     TextReview = "",
+                 },
+                 new Rating
+                 {
+                     RatingID = 4, 
+                     StarReview = 4, 
+                     TextReview = "",
+                                        
+                 },
+                 new Rating
+                 {
+                     RatingID = 5, 
+                     StarReview = 5, 
+                     TextReview = "",
+                 }
+
+                );
+
+
+
+
 
         }
     }
