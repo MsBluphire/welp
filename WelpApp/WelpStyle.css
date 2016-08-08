@@ -1,0 +1,11 @@
+﻿body {
+      background-image: url('images/img1.jpeg');
+      background-position:center;
+}
+.jumbotron{
+    background-color:lightseagreen;
+}
+h2 {
+    font-family: fantasy;
+    background-color:lightseagreen;
+}

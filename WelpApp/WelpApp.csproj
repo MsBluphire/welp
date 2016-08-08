@@ -190,11 +190,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\IdentityConfig.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Views\Manage\App_Start\BundleConfig.cs" />
+    <Compile Include="Views\Manage\App_Start\FilterConfig.cs" />
+    <Compile Include="Views\Manage\App_Start\IdentityConfig.cs" />
+    <Compile Include="Views\Manage\App_Start\RouteConfig.cs" />
+    <Compile Include="Views\Manage\App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BusinessesController.cs" />
     <Compile Include="Controllers\BusinessTypesController.cs" />
@@ -225,6 +225,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\img1.jpeg" />
     <Content Include="Scripts\ai.0.22.19-build00125.js" />
     <Content Include="Scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -232,6 +233,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="WelpStyle.css" />
     <None Include="Properties\PublishProfiles\WelpApp20160804011537.pubxml" />
     <None Include="Properties\PublishProfiles\WelpApp20160805021108 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
