@@ -128,7 +128,8 @@ namespace WelpApp.Migrations
                 }
 
                 );
-
+            // Need to figure out how to call Ratings. Icollection is listed in the Business class, but Rating ID is not a column within the class.
+            // How can we implement the Icollection to list Ratings as a column on the web app. 
             context.Ratings.AddOrUpdate(p => p.RatingID,
 
                 new Rating
