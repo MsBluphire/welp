@@ -22,12 +22,12 @@ namespace WelpApp.Models
         public string Phone { get; set; }
         public string Menu { get; set; }
         public int UserID { get; set; }
-        public int RatingID { get; set; }
+       
 
         // navigation properties
         public virtual BusinessType BusinessType { get; set; }
         public virtual ApplicationUser User { get; set; }
-        public virtual Rating Rating { get; set; }
+       
         public virtual ICollection<Rating> Ratings { get; set; }
     }
 }
