@@ -90,6 +90,7 @@ namespace WelpApp.Migrations
                     Hours = "4pm - 10pm",
                     Phone = "216 - 543 - 9876",
                     Menu = "image of menu, link to their menu or website",
+                    RatingID = 1,
 
                 },
 
@@ -101,6 +102,7 @@ namespace WelpApp.Migrations
                     Hours = "9am - 9pm",
                     Phone = "198-749-6051",
                     Menu = "Image of services/price menu, link to their menu or website",
+                    RatingID = 2, 
 
 
                 },
@@ -113,6 +115,7 @@ namespace WelpApp.Migrations
                     Hours = "4pm - 2am",
                     Phone = "614-LUV-BEER",
                     Menu = "JUST DRINKS",
+                    RatingID = 3, 
 
                 },
 
@@ -124,6 +127,7 @@ namespace WelpApp.Migrations
                     Hours = "24 hours",
                     Phone = "202-NOT-MINE",
                     Menu = "Listing of room packages, prices and availability",
+                    RatingID = 4, 
 
                 }
 
@@ -132,7 +136,7 @@ namespace WelpApp.Migrations
             // How can we implement the Icollection to list Ratings as a column on the web app. 
             context.Ratings.AddOrUpdate(p => p.RatingID,
 
-                new Rating
+                new Rating 
                 {
                     RatingID = 1,
                     StarReview = 1,
